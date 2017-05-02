@@ -16,6 +16,8 @@
 		4D69F0DB1EB49FAF00B8363D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D69F0DA1EB49FAF00B8363D /* Assets.xcassets */; };
 		4D69F0DE1EB49FAF00B8363D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D69F0DC1EB49FAF00B8363D /* LaunchScreen.storyboard */; };
 		4D69F0E91EB49FAF00B8363D /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69F0E81EB49FAF00B8363D /* TestTests.swift */; };
+		4DB4A36C1EB8693A0050ED12 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4A36B1EB8693A0050ED12 /* SearchResultsController.swift */; };
+		4DB4A36E1EB86FA80050ED12 /* Source in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4A36D1EB86FA80050ED12 /* Source */; };
 		BAD3475CD9EF0EAAAF3366CB /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3BA3D05F67811F6CA8D606 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		4D69F0E41EB49FAF00B8363D /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D69F0E81EB49FAF00B8363D /* TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTests.swift; sourceTree = "<group>"; };
 		4D69F0EA1EB49FAF00B8363D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB4A36B1EB8693A0050ED12 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		4DB4A36D1EB86FA80050ED12 /* Source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Source; path = Test/Source; sourceTree = "<group>"; };
 		A46C61205656B40AD5FF8799 /* Pods-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUITests/Pods-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF5503415C0FF162028144CA /* Pods-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0D8DF60BB6D604426C27F04 /* Pods-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				4D69F0E71EB49FAF00B8363D /* TestTests */,
 				4D60F3EB1EB769D70049C410 /* TestUITests */,
 				4D69F0CE1EB49FAF00B8363D /* Products */,
+				4DB4A36D1EB86FA80050ED12 /* Source */,
 				957243EAFA3CF3183CE0B249 /* Pods */,
 				72D776199D69CD76AB728ACB /* Frameworks */,
 			);
@@ -119,6 +124,7 @@
 				4D69F0D01EB49FAF00B8363D /* AppDelegate.swift */,
 				4D14B53B1EB8512D0023D306 /* IntroViewController.swift */,
 				4D69F0D21EB49FAF00B8363D /* ViewController.swift */,
+				4DB4A36B1EB8693A0050ED12 /* SearchResultsController.swift */,
 				4D69F0D41EB49FAF00B8363D /* Main.storyboard */,
 				4D69F0DA1EB49FAF00B8363D /* Assets.xcassets */,
 				4D69F0DC1EB49FAF00B8363D /* LaunchScreen.storyboard */,
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB4A36E1EB86FA80050ED12 /* Source in Resources */,
 				4D69F0DE1EB49FAF00B8363D /* LaunchScreen.storyboard in Resources */,
 				4D69F0DB1EB49FAF00B8363D /* Assets.xcassets in Resources */,
 				4D69F0D61EB49FAF00B8363D /* Main.storyboard in Resources */,
@@ -404,6 +411,7 @@
 				4D14B53C1EB8512D0023D306 /* IntroViewController.swift in Sources */,
 				4D69F0D31EB49FAF00B8363D /* ViewController.swift in Sources */,
 				4D69F0D11EB49FAF00B8363D /* AppDelegate.swift in Sources */,
+				4DB4A36C1EB8693A0050ED12 /* SearchResultsController.swift in Sources */,
 				4D69F0D91EB49FAF00B8363D /* Test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

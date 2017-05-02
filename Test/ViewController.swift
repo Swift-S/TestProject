@@ -23,11 +23,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
     var mymarker = GMSMarker()
     var mapGesture = false
     var myView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-    
-    //    var southWest = CLLocationCoordinate2DMake(35.7828,51.4606)
-    //    var northEast = CLLocationCoordinate2DMake(35.6224,51.3254)
-    //    var bounds = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-    
+
     
     
     

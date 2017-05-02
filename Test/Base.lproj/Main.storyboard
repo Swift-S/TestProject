@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,19 +17,10 @@
                         <viewControllerLayoutGuide type="top" id="xcP-6O-zcP"/>
                         <viewControllerLayoutGuide type="bottom" id="tKT-8U-fpf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tgl-7u-xwa" customClass="GMSMapView">
+                    <view key="view" contentMode="scaleToFill" id="Tgl-7u-xwa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xja-JX-lmc">
-                                <rect key="frame" x="122" y="207" width="96" height="127"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="127" id="edu-ih-cdX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cck-2p-YW1">
                                 <rect key="frame" x="122" y="609" width="131" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -39,30 +29,52 @@
                                     <action selector="accptTapped:" destination="6ot-2R-Ava" eventType="touchUpInside" id="FDw-55-7So"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VG-3b-HGw" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="537"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map-marker" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-jq-y5t">
+                                        <rect key="frame" x="139" y="148" width="96" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="f2p-SF-mn1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xck-jq-y5t" firstAttribute="leading" secondItem="3VG-3b-HGw" secondAttribute="leading" constant="139" id="607-KU-JcN"/>
+                                    <constraint firstItem="Xck-jq-y5t" firstAttribute="top" secondItem="3VG-3b-HGw" secondAttribute="top" constant="148" id="ML7-i6-WG3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xck-jq-y5t" secondAttribute="trailing" constant="140" id="p22-7U-Pe8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cck-2p-YW1" firstAttribute="leading" secondItem="Tgl-7u-xwa" secondAttribute="leading" constant="122" id="5aL-11-0c3"/>
                             <constraint firstItem="tKT-8U-fpf" firstAttribute="top" secondItem="cck-2p-YW1" secondAttribute="bottom" constant="20" id="5nb-yW-2hx"/>
                             <constraint firstAttribute="trailing" secondItem="cck-2p-YW1" secondAttribute="trailing" constant="122" id="CwK-2k-Vgo"/>
-                            <constraint firstItem="xja-JX-lmc" firstAttribute="leading" secondItem="Tgl-7u-xwa" secondAttribute="leadingMargin" constant="106" id="DWH-Xb-hUd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xja-JX-lmc" secondAttribute="trailing" constant="141" id="Rfo-hy-b2m"/>
-                            <constraint firstItem="xja-JX-lmc" firstAttribute="top" secondItem="xcP-6O-zcP" secondAttribute="bottom" constant="142.5" id="UgD-FZ-qlw"/>
+                            <constraint firstItem="cck-2p-YW1" firstAttribute="top" secondItem="3VG-3b-HGw" secondAttribute="bottom" constant="8" id="DcG-f7-lb4"/>
+                            <constraint firstItem="3VG-3b-HGw" firstAttribute="top" secondItem="xcP-6O-zcP" secondAttribute="bottom" id="IMV-Tp-LfD"/>
+                            <constraint firstAttribute="trailing" secondItem="3VG-3b-HGw" secondAttribute="trailing" id="XzU-mn-eJ3"/>
+                            <constraint firstItem="3VG-3b-HGw" firstAttribute="leading" secondItem="Tgl-7u-xwa" secondAttribute="leading" id="goe-rU-O2G"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AMV-p2-d8w">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="u2f-7d-X2L"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="u2f-7d-X2L">
+                            <connections>
+                                <action selector="searchWithAddress:" destination="6ot-2R-Ava" id="8l6-tq-fnZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="accptBttn" destination="cck-2p-YW1" id="5UU-sc-0zm"/>
-                        <outlet property="mapView" destination="Tgl-7u-xwa" id="1bI-aJ-21A"/>
-                        <outlet property="test" destination="xja-JX-lmc" id="cdb-mz-9Rf"/>
+                        <outlet property="mapView" destination="3VG-3b-HGw" id="INh-Xe-VRa"/>
+                        <outlet property="test" destination="Xck-jq-y5t" id="vHa-1f-I2E"/>
                         <outlet property="view" destination="Tgl-7u-xwa" id="jqi-6T-XbN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7b-Aa-Cxa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="77"/>
+            <point key="canvasLocation" x="989.60000000000002" y="76.911544227886068"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="ItK-ju-cPJ">
@@ -115,4 +127,7 @@
             <point key="canvasLocation" x="-556" y="77"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map-marker" width="128" height="128"/>
+    </resources>
 </document>

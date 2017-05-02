@@ -15,6 +15,7 @@ import GooglePlaces
 
 class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate,UISearchBarDelegate, LocateOnTheMap, GMSAutocompleteFetcherDelegate {
     
+    @IBOutlet weak var searchBarButton: UIBarButtonItem!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var test: UIImageView!         //MarkerImgView
     @IBOutlet weak var accptBttn: UIButton!
@@ -153,6 +154,8 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         //        self.view.bringSubview(toFront: test)
         self.view.bringSubview(toFront: accptBttn)
         print(mapView.camera.target)
+        
+        self.searchBarButton.accessibilityIdentifier = "Search"
     }
     
     func searchBarSetup() {

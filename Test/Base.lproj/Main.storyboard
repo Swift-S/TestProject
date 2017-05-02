@@ -68,6 +68,7 @@
                     <connections>
                         <outlet property="accptBttn" destination="cck-2p-YW1" id="5UU-sc-0zm"/>
                         <outlet property="mapView" destination="3VG-3b-HGw" id="INh-Xe-VRa"/>
+                        <outlet property="searchBarButton" destination="u2f-7d-X2L" id="pTm-LG-09n"/>
                         <outlet property="test" destination="Xck-jq-y5t" id="vHa-1f-I2E"/>
                         <outlet property="view" destination="Tgl-7u-xwa" id="jqi-6T-XbN"/>
                     </connections>
@@ -99,10 +100,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="dtS-xg-EPg" secondAttribute="trailing" constant="10" id="P0S-9n-dJ6"/>
-                            <constraint firstItem="dtS-xg-EPg" firstAttribute="leading" secondItem="BIU-0q-cVb" secondAttribute="leading" constant="10" id="P2c-IT-qeQ"/>
-                            <constraint firstItem="dtS-xg-EPg" firstAttribute="top" secondItem="kPS-fZ-Zek" secondAttribute="bottom" constant="254" id="lVa-VH-fQj"/>
-                            <constraint firstItem="Bxv-Sf-y84" firstAttribute="top" secondItem="dtS-xg-EPg" secondAttribute="bottom" constant="319" id="pqr-8h-Ln9"/>
+                            <constraint firstItem="dtS-xg-EPg" firstAttribute="centerX" secondItem="BIU-0q-cVb" secondAttribute="centerX" id="AsU-at-Jla"/>
+                            <constraint firstAttribute="trailing" secondItem="dtS-xg-EPg" secondAttribute="trailing" constant="10" id="dQg-Qs-301"/>
+                            <constraint firstItem="dtS-xg-EPg" firstAttribute="leading" secondItem="BIU-0q-cVb" secondAttribute="leading" constant="10" id="tlF-Ff-864"/>
+                            <constraint firstItem="dtS-xg-EPg" firstAttribute="centerY" secondItem="BIU-0q-cVb" secondAttribute="centerY" id="x97-SN-eXf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oAD-2b-roz"/>

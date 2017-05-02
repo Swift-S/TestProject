@@ -2,7 +2,7 @@
 //  TestUITests.swift
 //  TestUITests
 //
-//  Created by i Daliri on 4/29/17.
+//  Created by i Daliri on 5/1/17.
 //  Copyright © 2017 i Daliri. All rights reserved.
 //
 
@@ -31,6 +31,12 @@ class TestUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.buttons["Map"].tap()
     }
+//    func testTwo() {
+//        let app = XCUIApplication()
+//        app.buttons
+//    }
     
 }

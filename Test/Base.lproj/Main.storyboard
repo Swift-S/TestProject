@@ -88,9 +88,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtS-xg-EPg">
-                                <rect key="frame" x="172" y="318" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtS-xg-EPg">
+                                <rect key="frame" x="10" y="318" width="355" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Map"/>
                                 <connections>
                                     <action selector="mapTapped:" destination="w3l-95-NeS" eventType="touchUpInside" id="HUK-Ce-v4D"/>
@@ -98,6 +98,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dtS-xg-EPg" secondAttribute="trailing" constant="10" id="P0S-9n-dJ6"/>
+                            <constraint firstItem="dtS-xg-EPg" firstAttribute="leading" secondItem="BIU-0q-cVb" secondAttribute="leading" constant="10" id="P2c-IT-qeQ"/>
+                            <constraint firstItem="dtS-xg-EPg" firstAttribute="top" secondItem="kPS-fZ-Zek" secondAttribute="bottom" constant="254" id="lVa-VH-fQj"/>
+                            <constraint firstItem="Bxv-Sf-y84" firstAttribute="top" secondItem="dtS-xg-EPg" secondAttribute="bottom" constant="319" id="pqr-8h-Ln9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oAD-2b-roz"/>
                     <connections>
@@ -106,14 +112,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IyN-pE-aof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="77"/>
+            <point key="canvasLocation" x="208.80000000000001" y="76.911544227886068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y1k-tI-cnz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gze-qI-0Qd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Hsk-Or-ERA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hsk-Or-ERA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

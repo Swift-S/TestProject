@@ -20,11 +20,16 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
     @IBOutlet weak var accptBttn: UIButton!
     
     var locationManager = CLLocationManager()
-    //    var locationSelected = Location.sta
-    var mymarker = GMSMarker()
-    var mapGesture = false
-    var myView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-
+    var googleMapsView: GMSMapView!
+    var searchResultController: SearchResultsController!
+    var resultsArray = [String]()
+    var gmsFetcher: GMSAutocompleteFetcher!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupView()
+    }
     
     
     override func viewDidAppear(_ animated: Bool) {
